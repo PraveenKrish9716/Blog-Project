@@ -9,7 +9,7 @@ const app = express();
 
 
 //connect to mongodb
-const dbURi ='mongodb+srv://pkrootuser:word@pass@nodeblogproject.ep3ak.mongodb.net/node-tuts?retryWrites=true&w=majority'
+const dbURi ='<your mongodb url here>'
 mongoose.connect(dbURi, {useNewUrlParser:true, useUnifiedTopology:true})
 .then((result) => app.listen(3000))   // to fire when database is connected
 .catch((err)=>console.log(err))
